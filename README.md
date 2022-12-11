@@ -1,5 +1,7 @@
 # Whatsapp automation powered by GPT (For now)
 
+🌟 If you like the stuff
+
 Chat with GPT from whatsapp or make it autoreply for your specific contacts
 
 ![OpenAI Whatsapp](https://cdn.iconscout.com/icon/free/png-256/openai-1524348-1290723.png)
@@ -44,6 +46,7 @@ And make sure to add phone numbers to the config file and also hotword so it onl
 
 **note:** Make sure to scan the QR code that is created or else the whole things is joke 🤡
 
+Credits to @danielgross
       
 ## Go Installation - (Linux)
 
