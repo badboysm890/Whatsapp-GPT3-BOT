@@ -108,5 +108,9 @@ Full install instructions can be found here: https://golang.org/doc/install
 
 
 
+## Why was this made ?
+
+
+This project base was created by the the project "whatsgpt3" and was cool but i did make few interesting changes and that weren't merged so decided to make a separate repo and make it more updated frequently.
 
 
