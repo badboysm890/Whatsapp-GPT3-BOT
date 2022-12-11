@@ -1,4 +1,4 @@
-# WhatsappGPT 
+# Whatsapp automation powered by GPT (For now)
 
 Chat with GPT from whatsapp or make it autoreply for your specific contacts
 
