@@ -1,4 +1,4 @@
-# WhatsappGPT 
+# Whatsapp automation powered by GPT (For now)
 
 Chat with GPT from whatsapp or make it autoreply for your specific contacts
 
@@ -39,6 +39,8 @@ Once you have clone `cd whatsapp-gpt` and now we have to make sure there is GO a
 ```
     python3 server.py
 ```    
+
+And make sure to add phone numbers to the config file and also hotword so it only gets triggered what they speak with certain hotword and leave empty to reply to everyone
 
 **note:** Make sure to scan the QR code that is created or else the whole things is joke 🤡
 
@@ -108,5 +110,9 @@ Full install instructions can be found here: https://golang.org/doc/install
 
 
 
+## Why was this made ?
+
+
+This project base was created by the the project "whatsgpt3" and was cool but i did make few interesting changes and that weren't merged so decided to make a separate repo and make it more updated frequently.
 
 
