@@ -40,6 +40,8 @@ Once you have clone `cd whatsapp-gpt` and now we have to make sure there is GO a
     python3 server.py
 ```    
 
+And make sure to add phone numbers to the config file and also hotword so it only gets triggered what they speak with certain hotword and leave empty to reply to everyone
+
 **note:** Make sure to scan the QR code that is created or else the whole things is joke 🤡
 
       
