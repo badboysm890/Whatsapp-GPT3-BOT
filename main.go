@@ -39,6 +39,12 @@ func (mycli *MyClient) register() {
 
 // contains checks if a string is in an array of strings
 func contains(arr []string, str string) bool {
+
+	// if the array is empty, return true
+	if len(arr) == 0 {
+		return true
+	}
+
 	for _, a := range arr {
 		if a == str {
 			return true
@@ -76,6 +82,7 @@ func (mycli *MyClient) eventHandler(evt interface{}) {
 		cfgData := readConfig()
 
 		phoneNumbers := cfgData.PhoneNumbers
+
 		if !contains(phoneNumbers, v.Info.Sender.User) {
 			return
 		}
