@@ -4,7 +4,7 @@
 
 Chat with GPT from whatsapp or make it autoreply for your specific contacts
 
-![OpenAI Whatsapp](https://cdn.iconscout.com/icon/free/png-256/openai-1524348-1290723.png)
+![OpenAI Whatsapp](https://bb17.s3.ap-south-1.amazonaws.com/Whatsapp-GPT3-BOT.png)
 
 # Setup
 
