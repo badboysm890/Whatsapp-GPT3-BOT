@@ -8,7 +8,7 @@ Chat with GPT from whatsapp or make it autoreply for your specific contacts
 
 # Setup
 
-    git clone it
+    git clone https://github.com/badboysm890/Whatsapp-GPT3-BOT
 
 Once you have clone `cd Whatsapp-GPT3-BOT` and now we have to make sure there is GO and Python.
 
