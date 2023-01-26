@@ -10,7 +10,7 @@ from flask import g
 from playwright.sync_api import sync_playwright
 
 PROFILE_DIR = "/tmp/playwright" if '--profile' not in sys.argv else sys.argv[sys.argv.index('--profile') + 1]
-PORT = 5001 if '--port' not in sys.argv else int(sys.argv[sys.argv.index('--port') + 1])
+PORT = 5002 if '--port' not in sys.argv else int(sys.argv[sys.argv.index('--port') + 1])
 APP = flask.Flask(__name__)
 PLAY = sync_playwright().start()
 BROWSER = PLAY.firefox.launch_persistent_context(

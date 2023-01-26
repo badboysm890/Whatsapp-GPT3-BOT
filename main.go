@@ -74,9 +74,15 @@ func (mycli *MyClient) eventHandler(evt interface{}) {
 	case *events.Message:
 		newMessage := v.Message
 		msg := newMessage.GetConversation()
+		// some messages are empty, so we need to check for that
+
+		msg_raw := newMessage.GetExtendedTextMessage()
+		fmt.Println("Message from - Raw:", v.Info.Sender.User, "->", msg_raw)
+
 		fmt.Println("Message from - Conv:", v.Info.Sender.User, "->", msg)
+		fmt.Println("---------------------->", msg)
 		if msg == "" {
-			return
+			msg = msg_raw.GetText()
 		}
 
 		cfgData := readConfig()
@@ -87,20 +93,20 @@ func (mycli *MyClient) eventHandler(evt interface{}) {
 			return
 		}
 
-		if !contains(cfgData.HotWords, msg) {
-			return
-		}
+		// if !contains(cfgData.HotWords, msg) {
+		// 	return
+		// }
 
 		// remove the hotwords from the message
-		for _, hotword := range cfgData.HotWords {
-			msg = msg[len(hotword):]
-		}
+		// for _, hotword := range cfgData.HotWords {
+		// 	msg = msg[len(hotword):]
+		// }
 
 		// Make a http request to localhost:5001/chat?q= with the message, and send the response
 		// URL encode the message
 		urlEncoded := url.QueryEscape(msg)
 
-		url := "http://localhost:5001/chat?q=" + urlEncoded
+		url := "http://localhost:5002/chat?q=" + urlEncoded
 		// Make the request
 		resp, err := http.Get(url)
 		if err != nil {
